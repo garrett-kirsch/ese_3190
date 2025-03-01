@@ -1,0 +1,17 @@
+LTspice 24.1.1 for Windows
+Circuit: C:\Users\garre\ese_3190\lab5 - Current Mirror\LTSpice\exp1.net
+Start Time: Fri Feb 28 20:05:14 2025
+solver = Normal
+Maximum thread count: 12
+tnom = 27
+temp = 27
+method = trap
+Direct Newton iteration for .op point succeeded.
+Total elapsed time: 0.101 seconds.
+
+Files loaded:
+C:\Users\garre\ese_3190\lab5 - Current Mirror\LTSpice\exp1.net
+C:\Users\garre\AppData\Local\LTspice\lib\cmp\standard.mos
+C:\Users\garre\ese_3190\lab5 - Current Mirror\LTSpice\ALD1103N.txt
+C:\Users\garre\ese_3190\lab5 - Current Mirror\LTSpice\ALD1103P.txt
+
