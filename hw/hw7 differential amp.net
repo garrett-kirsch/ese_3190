@@ -1,0 +1,22 @@
+* C:\Users\garre\ese_3190\hw\hw7 differential amp.asc
+V1 Vdd 0 6V
+M5 Vdd Vy VOUT Vdd MyPMOS l=0.5u w=1.7u
+M4 Vdd Vy Vy Vdd MyPMOS l=0.5u w=1.7u
+M1 Vy N001 Vx 0 MyNMOS l=0.5u w=20u
+M2 VOUT VOUT Vx 0 MyNMOS l=0.5u w=20u
+M3 Vx N003 0 0 MyNMOS l=0.5u w=1.53u
+VB N003 0 1V
+C1 VOUT 0 5p
+V_CM N002 0 3
+Vin N001 N002 PULSE(0 1 1u 1ns 1ns 1u 2u)
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\Users\garre\AppData\Local\LTspice\lib\cmp\standard.mos
+.inc MyPMOS.txt
+.inc MyNMOS.txt
+* .dc V_CM 1.5 5.5 0.1
+* .op
+.tran 0 3us 0 50ns
+* .ac dec 1000 1 1000000
+.backanno
+.end
